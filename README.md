@@ -108,3 +108,50 @@ In the following sections, we will delve deeper into the specific problems this 
 
 [2] Huang, C. Z. A., Vaswani, A., Uszkoreit, J., Shazeer, N., Simon, I., Hawthorne, C., ... & Eck, D. (2019). Music transformer. In International Conference on Learning f.
 
+
+## 1.2 Problem Statement
+
+The field of music generation and style transfer using artificial intelligence has seen significant advancements in recent years, particularly in the domains of melody and harmony. However, the specific area of rhythm-focused style transfer remains relatively unexplored, presenting unique challenges and opportunities. This thesis addresses the critical need for sophisticated methods to model, analyze, and transfer rhythmic patterns between different musical styles using Recurrent Neural Networks (RNNs), with a particular focus on Long Short-Term Memory (LSTM) networks.
+
+The problem at hand can be articulated through three primary challenges:
+
+### 1. Representation Challenge
+
+One of the fundamental issues in rhythm-focused style transfer is developing an effective method to encode complex rhythmic patterns in a format suitable for RNN processing. Unlike pitch, which can be easily represented as discrete values, rhythm involves intricate temporal relationships that are challenging to capture digitally. The representation must preserve the nuances of timing, accent, and groove that define different musical styles while being compatible with the input requirements of RNN architectures.
+
+This challenge is further complicated by the need to maintain the structural integrity of rhythmic patterns across various time scales, from individual beats to larger phrasal structures. As noted by Lattner et al. (2018), imposing higher-level structure in music generation is crucial for creating coherent and stylistically consistent outputs [1]. The representation must, therefore, be capable of encoding both local rhythmic details and global temporal structures.
+
+### 2. Modeling Challenge
+
+The second major challenge lies in designing an RNN architecture capable of capturing long-term dependencies and global structure in rhythmic sequences. This is crucial for maintaining stylistic coherence in generated rhythms. While LSTMs have shown promise in handling long-term dependencies, as demonstrated by Huang et al. (2019) in their work on music transformer models [2], the specific requirements of rhythm modeling present unique difficulties.
+
+Rhythmic patterns often exhibit complex hierarchical structures, with interactions between different metrical levels. For instance, the relationship between a basic pulse, syncopated accents, and larger phrasal groupings can be crucial in defining a particular rhythmic style. The modeling challenge, therefore, involves creating an architecture that can:
+
+a) Capture and reproduce these multi-level temporal relationships.
+b) Maintain consistency over extended sequences, ensuring that generated rhythms remain coherent and stylistically appropriate throughout a piece.
+c) Handle the often non-linear nature of rhythmic progression, where future events may be influenced by distant past events in complex ways.
+
+### 3. Transfer Challenge
+
+The third significant challenge is creating a mechanism for transferring rhythmic styles between different musical contexts without losing the essential characteristics of either the source or target styles. This involves:
+
+a) Identifying and isolating the core rhythmic features that define a particular style.
+b) Developing methods to apply these features to new musical content in a way that feels natural and musically appropriate.
+c) Balancing the preservation of the original musical content with the introduction of new rhythmic elements.
+
+This challenge is particularly complex due to the interplay between rhythm and other musical elements such as melody, harmony, and timbre. As highlighted in the research on music style transfer by Dai et al. (2018), maintaining content while transferring style is a delicate balance that requires sophisticated modeling techniques [3].
+
+Furthermore, the transfer process must be flexible enough to handle a wide range of musical styles, from highly structured and regular rhythms to more fluid and improvisational patterns. This flexibility is essential for creating a truly versatile rhythm style transfer system.
+
+In addressing these challenges, this thesis aims to contribute to the broader field of AI-assisted music creation and analysis. By focusing specifically on rhythm, an often-overlooked aspect of musical style, this research has the potential to unlock new dimensions in music generation and style transfer. The successful development of methods for rhythm-focused style transfer could have wide-ranging applications, from assisting composers in exploring new rhythmic territories to developing more sophisticated music recommendation systems based on rhythmic preferences.
+
+Moreover, this research aligns with the growing interest in creating more comprehensive and musically aware AI systems. By tackling the complexities of rhythm representation, modeling, and transfer, this work contributes to the advancement of AI's understanding and generation of music in all its facets.
+
+In the subsequent sections of this thesis, we will explore these challenges in depth, proposing novel approaches and methodologies to address them. Through rigorous experimentation and analysis, we aim to develop a system that can effectively model and transfer rhythmic styles using RNNs, potentially opening new avenues for creative expression in music technology.
+
+[1] Lattner, S., Grachten, M., & Widmer, G. (2018). Imposing higher-level structure in polyphonic music generation using convolutional restricted Boltzmann machines and constraints. Journal of Creative Music Systems, 2(2). https://doi.org/10.5920/jcms.2018.05
+
+[2] Huang, C. Z. A., Vaswani, A., Uszkoreit, J., Shazeer, N., Simon, I., Hawthorne, C., ... & Eck, D. (2019). Music transformer. In International Conference on Learning Representations. https://openreview.net/forum?id=rJe4ShAcF7
+
+[3] Dai, S., Zhang, Z., & Xia, G. (2018). Music style transfer: A position paper. arXiv preprint arXiv:1803.06841. https://arxiv.org/abs/1803.06841
+
