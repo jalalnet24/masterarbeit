@@ -1,18 +1,18 @@
 # Table of Contents
 
-## 1. Introduction
+1. Introduction
    1.1 Background and Motivation
    1.2 Problem Statement
    1.3 Objectives of the Study
    1.4 Structure of the Thesis
 
-## 2. Literature Review
+##2. Literature Review
    2.1 Overview of Style Transfer in Music
    2.2 Recurrent Neural Networks (RNNs) in Music Generation
    2.3 Rhythmic Pattern Modeling
    2.4 Existing Approaches to Rhythm Style Transfer
 
-## 3. Methodology
+##3. Methodology
    3.1 Model Architecture
        3.1.1 Bi-directional LSTM
        3.1.2 Attention Mechanism
