@@ -1,6 +1,6 @@
 # Table of Contents
 
-1. Introduction
+1. [Introduction](#Introduction)
    1.1 Background and Motivation
    1.2 Problem Statement
    1.3 Objectives of the Study
