@@ -155,3 +155,55 @@ In the subsequent sections of this thesis, we will explore these challenges in d
 
 [3] Dai, S., Zhang, Z., & Xia, G. (2018). Music style transfer: A position paper. arXiv preprint arXiv:1803.06841. https://arxiv.org/abs/1803.06841
 
+
+## 1.3 Objectives of the Study
+
+The primary objective of this thesis is to develop a robust framework for rhythm-focused style transfer using Recurrent Neural Networks (RNNs), particularly Long Short-Term Memory (LSTM) networks. This research aims to address the unique challenges associated with modeling, analyzing, and transferring rhythmic patterns between different musical styles. The specific objectives are as follows:
+
+
+### 1. Develop Effective Rhythmic Representations
+
+- **Objective**: Create a method to encode complex rhythmic patterns in a format suitable for RNN processing.
+
+- **Rationale**: Unlike pitch, rhythm involves intricate temporal relationships that are challenging to capture digitally. Effective representation must preserve the nuances of timing, accent, and groove that define different musical styles.
+
+- **Reference**: Lattner et al. (2018) emphasized the importance of imposing higher-level structure in music generation for creating coherent and stylistically consistent outputs [1].
+
+### 2. Design Advanced RNN Architectures for Rhythm Modeling
+- **Objective**: Develop an RNN architecture capable of capturing long-term dependencies and global structure in rhythmic sequences.
+
+- **Rationale**: Rhythmic patterns exhibit complex hierarchical structures, and maintaining stylistic coherence in generated rhythms requires an architecture that can handle multi-level temporal relationships.
+
+- **Reference**: Huang et al. (2019) demonstrated the potential of attention mechanisms in generating coherent and stylistically consistent music [2].
+
+
+### 3. Implement a Mechanism for Rhythmic Style Transfer
+
+- **Objective**: Create a mechanism for transferring rhythmic styles between different musical contexts without losing the essential characteristics of either the source or target styles.
+
+- **Rationale**: This involves identifying and isolating core rhythmic features, applying these features to new musical content, and balancing the preservation of original content with the introduction of new rhythmic elements.
+
+- **Reference**: Dai et al. (2018) highlighted the complexity of maintaining content while transferring style, requiring sophisticated modeling techniques [3].
+
+
+### 4. Evaluate the Effectiveness of the Proposed Methods
+
+- **Objective**: Assess the performance of the developed models in terms of accuracy, coherence, and stylistic consistency of generated rhythms.
+
+- **Rationale**: Rigorous evaluation is essential to validate the effectiveness of the proposed methods and to identify areas for improvement.
+- **Reference**: The evaluation metrics and methodologies will be informed by existing research in music generation and style transfer.
+
+### 5. Explore Potential Applications and Implications
+
+- **Objective**: Investigate the practical applications of rhythm-focused style transfer in various musical contexts and its broader implications for AI in music.
+- **Rationale**: Successful rhythm-focused style transfer could have wide-ranging applications, from assisting composers to developing sophisticated music recommendation systems.
+- **Reference**: The potential impact of this research extends beyond academic interest, contributing to the advancement of AI-assisted music creation and analysis.
+
+By achieving these objectives, this thesis aims to contribute to the broader field of AI in music, with a particular focus on the often-overlooked aspect of rhythm. The successful development of methods for rhythm-focused style transfer could unlock new dimensions in music generation and style transfer, empowering musicians and producers to explore new rhythmic territories and facilitating cross-genre experimentation.
+
+[1] Lattner, S., Grachten, M., & Widmer, G. (2018). Imposing higher-level structure in polyphonic music generation using convolutional restricted Boltzmann machines and constraints. Journal of Creative Music Systems, 2(2). https://doi.org/10.5920/jcms.2018.05
+
+[2] Huang, C. Z. A., Vaswani, A., Uszkoreit, J., Shazeer, N., Simon, I., Hawthorne, C., ... & Eck, D. (2019). Music transformer. In International Conference on Learning Representations. https://openreview.net/forum?id=rJe4ShAcF7
+
+
+[3] Dai, S., Zhang, Z., & Xia, G. (2018). Music style transfer: A position paper. arXiv preprint arXiv:1803.06841. https://arxiv.org/abs/1803.06841
